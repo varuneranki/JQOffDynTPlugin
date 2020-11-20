@@ -1,0 +1,26 @@
+div.idaX {
+  height: 300px;
+  width: 500px;
+  border: 5px outset gray;
+  background-color: rgb(255, 219, 60);
+  background-image: url("https://image.freepik.com/free-photo/abstract-textured-oil-painting_53876-88722.jpg");
+  text-align: center;
+}
+
+div.idaX::before {    
+  opacity: 0.1;
+}
+
+a.name {
+ font-family: 'Poppins', sans-serif;
+ font-size: 80%;
+ color: blueviolet;
+ text-shadow: 0.25px 0.25px 8px #05cafc;
+}
+
+a.sent {
+  font-family: 'Poppins', sans-serif;
+  color:rgb(255, 57, 43) ;
+  font-size: 100%;
+  text-shadow: 0.25px 0.25px 8px #ffbc05;
+}

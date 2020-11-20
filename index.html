@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">  
+
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    
+    <script>
+
+    $(function() {
+      var lang = [];
+      $.getJSON('lang.json', function(data) {
+       $.each(data.lang, function(i, f) {
+        var aX = '<a class= "name">'+f.name+"</a>"+"<br>"+"</br>"+
+          '<a class= "sent">' + f.sent+ "</a>"+"<br>"+"</br>"
+          $(aX).appendTo("#idaX p");
+          });
+        });
+      });
+      
+      </script>
+
+
+  </head>
+  <body>
+    <!--<script src="script.js"></script>-->
+    <div id= "idaX" class= "idaX">
+    <p >
+    </p>
+    </div>
+
+    <!--<script>
+    window.onload = myFunction() {
+      document.getElementById("idaX").style.backgroundColor = "lightblue";
+      document.getElementById("idaX").style.color = "green";
+    }
+    </script>-->
+
+  <!--<p> https://stackoverflow.com/a/40992008 </p>
+
+  <p> https://stackoverflow.com/a/15637327 </p>-->
+  </body>
+</html>
